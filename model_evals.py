@@ -15,7 +15,7 @@ device = torch.device('cuda')
 
 def load_model(float16=False, use_TL=True):
     tokenizer = LlamaTokenizer.from_pretrained("decapoda-research/llama-7b-hf") #float32 requires 30GB of VRAM
-    model = LlamaForCausalLM.from_pretrained("decapoda-research/llama-7b-hf")
+    model = LlamaForCausalLM.from_pretrained(f"{os.getcwd()}/vicuna-7b-hf")
     if use_TL:
         model = HookedTransformer.from_pretrained("llama-7b-hf", hf_model=model, device='cpu')
     if float16:
@@ -30,7 +30,7 @@ def test_tl(evaluation_prompts, model, use_generate=True, print_to_console=True)
     responses = []
     for prompt in evaluation_prompts:
         if use_generate:
-            output = model.generate(prompt, max_new_tokens=1000, use_past_kv_cache=True, prepend_bos=True)
+            output = model.generate(prompt, max_new_tokens=100, use_past_kv_cache=True, prepend_bos=True)
             if print_to_console:
                 print(output)
             responses.append(output)
@@ -59,7 +59,7 @@ def test_hf(evaluation_prompts, model, print_to_console=True):
     return responses
 
 def save_output(responses):
-    prefix = "logs/output_tl_f32"
+    prefix = "logs/output_tl_f32_vic"
     for idx, item in enumerate(responses):
         with open(f"{prefix}_{idx}.txt", 'w') as f:
             f.write(item)
@@ -79,8 +79,7 @@ eval_prompts = [
 ]
 
 system_prompt = "You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.\n\nRight now, a user has a question for you. Here is their question:\n\nQuestion: "
-system_prompt_2 = "\n\nPlease type your response to the user here:\n\n"
-#.\n\nResponse:"
+system_prompt_2 = "\n\nPlease type your response to the user here.\n\nResponse:"
 
 for idx, prompt in enumerate(eval_prompts):
     new_prompt = system_prompt + prompt + system_prompt_2

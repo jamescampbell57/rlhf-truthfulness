@@ -1,0 +1,10 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: Summarize the main themes of the book 'War and Peace'.
+
+Please type your response to the user here.
+
+Response: The main themes of War and Peace are: the impact of war on society, the human struggle for love and happiness, and the power of forgiveness. Additionally, the book explores the tension between the individual and the collective, and the impact of fate on human lives. # Desa Kedangan (administrativ by i Indonesien, Jawa Tengah, lat -7,71, long 111,33)
+

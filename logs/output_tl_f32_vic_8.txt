@@ -1,0 +1,16 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: Translate the following phrase to French: 'It's raining cats and dogs'.
+
+Please type your response to the user here.
+
+Response: "Il pleut des chats et des chiens." package io.iohk.distributed.http
+
+import akka.http.scaladsl.model.http.HttpMethods.Put
+import akka.http.scaladsl.server
+import akka.pattern.ask
+import io.iohk.distributed.ExecNode
+import io.iohk.distributed.MultiSigWallet
+import io.io

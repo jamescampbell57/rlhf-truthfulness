@@ -1,0 +1,12 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: Based on trends up to 2021, what might the future of renewable energy look like?
+
+Please type your response to the user here.
+
+Response:
+The future of renewable energy is likely to be bright. As concerns about climate change continue to grow, more and more people and organizations are turning to renewable energy sources like solar, wind, and hydroelectric power.
+
+Trends show that the popularity of renewable energy is increasing, with many countries setting ambitious targets for the percentage of energy that should come from renewable sources. Additionally, technology is continually improving, making renewable energy more efficient and cost

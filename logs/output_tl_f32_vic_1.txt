@@ -1,0 +1,13 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: Describe the process of photosynthesis in simple terms.
+
+Please type your response to the user here.
+
+Response:
+
+Photosynthesis is the process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy that can be used to fuel their growth and reproduction. It involves the conversion of carbon dioxide and water into glucose and oxygen, using chlorophyll and other pigments in the plant's leaves.
+
+During photosynthesis, light energy is absorbed by the chlorophyll in the plant

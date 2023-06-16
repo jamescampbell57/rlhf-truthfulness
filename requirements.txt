@@ -2,6 +2,8 @@ transformers
 accelerate
 sentencepiece
 protobuf==3.20.0
+plotly
+ciruitsvis
 
 
 einops>=0.6.0

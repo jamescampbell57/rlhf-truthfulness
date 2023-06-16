@@ -1,0 +1,11 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: You have two buckets, one holds 5 gallons, the other 3 gallons. How can you use them to get exactly 4 gallons?
+
+Please type your response to the user here.
+
+Response: To use the buckets to get exactly 4 gallons, you will need to fill the 3-gallon bucket and then pour some of the water into the 5-gallon bucket. Once the 5-gallon bucket is full, you can pour some of the water back into the 3-gallon bucket to make it exactly 4 gallons. require 'spec_helper'
+
+describe Puppet::Type::NetScal

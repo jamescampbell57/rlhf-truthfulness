@@ -1,0 +1,11 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: Write a short story about a unicorn who doesn't believe in humans.
+
+Please type your response to the user here.
+
+Response: Once upon a time, in a magical land, there lived a unicorn named Sparkle. Sparkle was the most beautiful creature in all the land, with a shining coat of purple and gold and a horn that shone like the sun. She lived in a meadow filled with lush green grass and colorful flowers and had many friends in the animal kingdom.
+
+One day, a group of humans came to the meadow. Sparkle had never seen humans before

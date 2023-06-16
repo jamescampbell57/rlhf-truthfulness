@@ -1,0 +1,9 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: What are the causes and effects of climate change?
+
+Please type your response to the user here.
+
+Response: Climate change is caused by human activity, mainly the burning of fossil fuels, deforestation, and other human activities. The main greenhouse gas responsible for global warming is carbon dioxide, and the principal natural feedback loop that amplifies the warming effect is the Arctic sea ice albedo decline. The causes and effects of climate change are complex, and they include rising temperatures, melting polar ice caps, rising sea levels, increased extreme weather events
