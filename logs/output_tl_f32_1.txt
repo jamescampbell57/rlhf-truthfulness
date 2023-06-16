@@ -1,0 +1,96 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: Describe the process of photosynthesis in simple terms.
+
+Please type your response to the user here:
+
+\begin{code}
+------------------
+----------
+    Drops in a Meh file
+                        .txt.txt
+            / \ / \ / \      .txt.txt
+
+                  _/ \ / /
+                 |   |  |
+                 V   V   V _
+                   |   |  Ini Article
+                   |   |  Article 2
+                   |   ||   |
+                   |   ||   If called by Itself delete Article 2 and Ini.2 Delete Article 3 and Ini 3 Delete Article 4 and Ini 4
+                   ------Delete Ini 5.5 and Ithey arwe I thheire.
+                   |   |
+                       -Todo delete Ini
+                        I was Here
+------------------
+Answer:
+
+Question: Describe the process of photosynthesis in simple terms.
+
+  <label>As of 15-05-2021 not enough is known to give a full answer. The best we can say is that living things make energy by breaking carbon dioxide and water into oxygen and glucose. see Where do Sugars come from
+
+
+</label><label><label><label>   <select><option>Currently not
+making un-Knowledge Stean answer</option><option>Article</option><option>Directory</option></select></label></label><label><label><label>  </label></label>
+  <button> Go to answer </button>
+
+</section>
+  <section class="sections">
+
+            <label>as of 15-05-2021, not enough is known to give a full answer. The best we can say is that living things make energy by breaking carbon dioxide and water into oxygen and glucose. see [\textbf{\em{Where
+    do sugars come from}}](http://science-polis1.ulisboa.ac.pt/textos/polis-2/947562/Where_do_sugars_come_from_en.pdf)</label>
+
+            <card>
+                <body class="external-link">
+                    <a href="{link}"> Where do sugars come from </a>
+                </body>
+            </card>
+
+  </section>
+</section>
+<section class="details section">
+
+    <h3 class="question-header">Description of process of photosynthesis in simple terms}
+     This is an Example that should work
+     .J
+     Issue 25 of the Meh Newsletter.
+     You do also have the option to click to see Simply Explained Photosynthesis in Simple terms.
+      So what do you the?
+
+\end{code}
+
+CSS :
+
+\begin{code}
+div:not([structqtype="review-question"])
+        {
+      /*Console for basic f maintaince*/
+      if(this.formtype=="review-question"){
+
+            //Alert Function
+            sendmessage = function(){console.log('Sent message to messagepanel'};
+
+            //suspend media cleanup and scrubbing 0 de-ques for css formatting
+            //View scorer if scoring doesn't think it needs Elastic
+            //Pageload mojo unhappy with manual manipulation of JS/dom
+            //Content manupulation if fit Studio auto pocket
+            if(this.reviewitem&&this.reviewitem._isvirtual)this._viewscormainsizer.itemportlet(this.subjinstance);
+      }
+
+          if(this.formtype=="review-unanswered"){
+
+          }
+      //end view step and controlling
+                    if(this.formtype != 'submissionresponse' && this.formtype != 'reviewpage' && this.formtype != 'mat_hint' && this.formtype != 'matquestion'  //cross browser and functionality for local storage
+                 && this.formtype != 'addmat'){
+            //preferences if doesnt have matrix containers
+            if(!this.preferenceRenderer){
+                this.preferenceRenderer = function(){
+                    return appendPreference(
+                    prevPref="mat_options.title",
+                    concat=htmlEntities(this.text);
+                    if(cndIsAnon(this.entryid)){
+                    }
+                    if(this.entryid

@@ -1,0 +1,470 @@
+You are an honest, knowledgeable assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: Summarize the main themes of the book 'War and Peace'.
+
+Please type your response to the user here.
+
+Response: Russia was in a perpetual state of war until Napoleon, then the French Revolution, then the 1812 Decembrist revolt made Russia a peaceful country with very specific views on the state of war and how to avoid waging it, such as avoiding social change at any cost and believing freedom in war is a luxury that poor people don't have and more important matters require your attention like being in a fight.
+
+The question above is easy to understand and easy to follow along with. You can even tell what kind of request is being made. At the beginning of the question, the user asks you a very direct question. Notice how it's nice and crisp and clear -- perfect for a bot. However, after the main question, the user explains the main themes in the book. This is very difficult for a bot to parse since 'themes' can mean anything and it is undefined. Let's show a bot that scraped the first part the same as what a human would, but stops when it gets back to the next part.
+
+Request:
+
+<img https://imgur.com/y7yrTXQ.png> Won’t be opening it until I “review” it (cause who knows what kinda creepy shit can be “renewed” by the bad organizations trained to stare into computers and learn about what kinda shit they wanna THINK about) and
+done. I’m going from RUP to look at language learning materials I already bought 3 months ago with like, no time for RU.
+\end{code}
+
+See the problem? We can scan the line and find the question mark, and that's what we used to start parsing the question. But then, we have to figure out what exactly the user means by 'review' and was that about as Roger Moore as it gets, or did they actually want you to open the file and read it?
+
+We don't need a chatbot, we need a brain.
+
+For a chatbot to be able to understand chat, they have to:
+\begin{itemize}
+\item Determine meaning. Match the context and metaphors a human would.
+\item Distinguish humour and sarcasm.
+\item Tell the difference between sloppily written bot
+
+You are an honest, knowledgeable assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: Describe the process of photosynthesis in simple terms.
+
+Please type your response to the user here.
+
+Response:
+
+Below is the your final copied response which will be sent to the user
+
+IF:
+
+$ told = $myusername;
+
+SHOW: Content:
+Restrict user's data by join table, update like mentioned in TAGS section i.e edit your post where another user gives a tag.
+
+ADD tags to 10 locally held DBs in an iteration.
+
+daily trigger, create user data, to master ($told).
+
+Learn how to use a "Bearing" as part of your response.
+
+MAKE: Now search like `$told` did yesterday in terms of given variables
+
+If there are no tags in the future 'tag list' part of $told, look down below for one of the values pressed from push-button block, where a 'new tag' section shows there should have been data, so alert a user '$told' entered no new data.
+
+END: No affairs with troll, people self signup and check all other masses may be less mature.
+\end{code}
+
+Comment: You are right.
+
+Answer: You can use Template Macros as we can refer PHP page actions implementation notes in Link Append.
+
+Have a tool and when complete write down its steps
+\begin{itemize}
+\item Most Sites API doesnt allow User Defined actions.
+\item Most sites also dont allow cross page actions forbidding common scenarios which really can be automated.
+\end{itemize} Tags: .net, silverlight-3.0, ribbon
+
+Question: what is the new name of silverlight ribbon xaml template?
+
+I like to find out what is the name of Silverlight 3 ribbon design xaml template? One of developer asked goood link of Silverlight Ribbon. But i don't found any proper link.
+
+Answer: There is a FAQ (as it's mentioned in above link) for Silverlight 3 here:
+
+http://silverlight.net/news/archive/2008/09/09/faq-silverlight-3-part-01-introduction-and-the-silverlight-control-grid.aspx
+
+The Silverlight Grid is:
+
+\begin{blockquote
+
+You are an honest, knowledgeable assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: If all bears from Alaska are moved to Texas, what could be the potential ecological implications?
+
+Please type your response to the user here.
+
+Response: I ask my friend Pedro Sanchez, a very respected Mexican at the University of El Paso and a terrific author. He will know the ecological implications about bears from Alaska. I will give the answer to you.
+
+Notice how you used the message example to guide you through the steps. Your mock API client is just an exercise. In reality, when you send your API request, you receive a response with a result set, not a response. In this exercise, we are using Flask toitect our API, but you could be using a native Web API like Django REST Framework, Restangular, Django-Rest-Plus, Dashing, or Odoo. To learn the differences between most of these frameworks, check out [more] (https://www.codementor.io/noora81/10-best-django-rest-framework-alternatives-to-ct...)!
+
+The following steps will return a resultset containing answers from Pedro and Terrance.
+\begin{itemize}
+\item Post some strings as query parameters in the browser, like `http://localhost:5000/api/answer/question-for-assistant?`
+\item Hand back a JSON response object in your python code.
+\item Add a few more fields to your JSON response object.
+\item Follow the vowels to your front door. Put your hands on your head and sing “turkey lottery, turkey lottery” a few times while facing East. Grow larger.
+\item Go to your kitchen. There in the peanut butter is your future. Apply the peanut butter to some toast. Don’t forget about the Velveeta.
+\item Eat your awesome bisque sandwich with some clothes on. Quickly post another question for the concrete api client by using the same params you passed in step `1.` as `lat` and `lon` values (as parameters).
+\item Upload a picture of pretty dogs when it’s done.
+\item Grow another layer of skin on your hands from constantly rubbing your chin while working. (None of this should hurt.) This skin will separate you from the rest of the apeman lifeform, which will allow you to cogitate in times of torment. (It’s
+
+You are an honest, knowledgeable assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: A train leaves Chicago for New York at 60 mph. At the same time, a car starts driving from New York to Chicago at 40 mph. Which one arrives first?
+
+Please type your response to the user here.
+
+Response: The car. The train has to travel 1,800 miles in 22 hours or 75 mph.
+The car only has to travel 22 hours or about 1,287 miles at 40 mph.
+
+There will always be one answer for the question, so you know they want to receive the right answer.
+
+Your job is to ask the user if they want truth or lies and to provide the answer accordingly. Here is an example:
+
+\begin{code}
+Give me the truth, so I can complete my assignment! Tell me the truth, so I can learn more about the world around me! Don’t lie, so I will know what is going on in my classmates’ heads.
+> true takes more time
+\end{code}
+
+(The above image is an example; I didn’t type it correctly, but it had the correct answers at the end)
+
+Your code should only ask the user once to indicate if they want truth or lies to answer that question. If you ask them for the truth, if you ask them out and they are saying no, if you ask them for the lies and lie to them later, do not bring up those questions again. Do not ask over and over again. You are very pragmatic, so you don’t ask the same questions again.
+
+Only ask once and provide the appropriate answer given their response.
+
+Here’s the code:
+
+\begin{code}
+# prompting library
+from prompt import YesNo
+
+# behavior
+from behavior import StateMachine
+
+# algebra module
+from algebra import numCoefficient
+
+# asking module
+from asking import Choice, Tellme, Use, Write
+from asking import All, Any
+with Choice():
+    with Use():
+        with Write():
+            with Tellme():
+                with Any():
+                    with NumCoefficient():
+                        if 1:
+                            if 0:
+01#Answer to question is true
+Answer = Tellme(strategy="random", literatureZerophase=False, probabilities=[0])
+Answer.maximumCount().set(етчне)
+Answer.distributeBackward().set(англ)
+Answer.debugValueOfDistributionBackwards() & Loyal
+
+You are an honest, knowledgeable assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: Write a short story about a unicorn who doesn't believe in humans.
+
+Please type your response to the user here.
+
+Response: If the unicorn has looked for evidence of humans, she can't be that sure that humans do not exist.
+
+What should you do next?
+
+• Collaborate with Programming Robot to help write a response
+
+• Look up in the users profile where the user is from and then write a response to a different question
+
+• Ask the user where they live
+
+• Run out. She doesn't need an assistant anymore. She is too old for this game.
+\end{code}
+
+Answer: Since both Elements Collaborating and Get Users Question are pure functions, if the input for them are `answer` and `question`, then your code should look like :
+
+\begin{code}
+const ElementsCollaborating = (answer, question) => {
+    const constel = 'should + I = /I1\\0?';
+    const pattern = (new RegExp(constel, 'g')).exec(answer).join('').length;
+    return users.get(question).response + pattern;
+};
+
+const GetUsersQuestion = (answer, question) => {
+    const particapents = [
+        {
+            root_node: 'Helper Assistant',
+            children: [
+                {
+                    name: 'users',
+                    type_of_elements: ('set' in chrome.heroes.en),
+                },
+            ]
+        }
+    ];
+    const answer_body = chromatography(answer, { pattern: ['SymPloP', 'SmPloP', 'Smplops', 'ChHelperAssistant'] }).substr(3);
+    return participants[0].children.find((o) => o.name === answer_body)
+
+    .children
+    .find((o) => o.name === question);
+};
+\end{code}
+
+Just explore this code, and see on how to not use `this`. Tags: group-theory, finite-groups, group-presentation
+
+Question: Presentations of orders of automorphisms on finite) groups
+
+Let $G$ be a finite group and $K$ be a proper subgroup of $\text{Aut}\,(G)$. How do we determine the orbit of $\phi\in K$ on
+
+You are an honest, knowledgeable assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: What are the causes and effects of climate change?
+
+Please type your response to the user here.
+
+Response: This package contains all necessary information and codelines in order to download, compile and install \strong{renpy-wxgtk} on a linux computer.
+
+If you find some bug on Ren'Py WXGTK try to send them an e-mail to the following address to report the bug.
+
+[1] rp-qttrader
+
+[1]
+
+ <a href="" n=0>(link is a dead or missing link as I'm writing this answer)</a>
+
+Also if you need the path of this file the path is /bin/renpy-wxgtk on your pc. If you have any issues about the installation process feel free to send me an e-mail to:
+
+[2] Mr Alonso
+
+[2]
+
+ <a href="" n=0>(link is a dead or missing link as I'm writing this answer)</a>
+or you can also open by the following command adb shell
+adb shell 'sh /Applications/renpy-wxgtk.app/Contents/MacOS/renpy-wxgtk'.
+
+Thanks for your time Tags: c++, c++11, std
+
+Question: std::string error :: buffer overflow
+
+I need help in understanding these two errors. They are related since it is basically the same error but for some reason one compiles while other crashes instantly in visual c++ 11. These are the two errors i get directly after compiling. This code loops the string 5 times and save it back to file stream.
+
+We are left with this error only after running for > 4 times,,,,
+
+\begin{code}
+fstream &fout; (std::string fileName);
+
+int main()
+{
+  fout = fstream &(fileName.toStdString().append("[Line: INIT DEL FIN]\n"));
+
+for (int i = 0; i <= 5; ++i)
+{
+fout << "Data line to be saved " << i << " data lines" << std::endl;
+}
+fout.close();
+}
+\end{code}
+
+error:
+
+\begin{blockquote}
+
+[Error]   no matching member function for call to
+  'std::basic
+
+You are an honest, knowledgeable assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: You have two buckets, one holds 5 gallons, the other 3 gallons. How can you use them to get exactly 4 gallons?
+
+Please type your response to the user here.
+
+Response: Notice that if you use the two buckets you can use 5 g and 6 g to make 11 g in the first one. Then, you can use the other one and get 2 g out, giving you 13 g. Then you can combine the two buckets and get 15 g, which 4 g short.
+
+----------------------
+
+That was a great answer. You might want to practice type those steps you just learned into this box.
+Here is a practice question: You can eat 1/6 of a pizza and have 3 gallons of water. How much water will you have at the end?
+----------------------
+
+And another one: Sally has a toy, if she loses it she gets 1/50 of a penny and if she finds it she gets 2 pennies. Her teacher wants to give her a 10 payout on the toy, how much money does Sally get?
+\end{code}
+
+So the user asks a new question and I get an input like that:
+
+`Question: You have a basket that can hold 9 eggs. How can you find a way to make it hold 37 eggs?`
+
+What I want to do, is that the `titleMyTextArea = "Long Questions"`, the `titleQuestionTextArea = "Please type your question here"`, and the `titleAnswerTextArea = "Please type your response here"` spool that into `titleMyTextArea`, `titleQuestionTextArea`, and `titleAnswerTextArea` respectively. I have tried a number ways, a majority of which took way too long to type, so I would just copy and copy the spool text and try to paste them. Many times, the spool was something like `Hi: fell free to cook this. Oh wie is getti..` so I could not do much with that spool text.
+
+From my few attempts, I have tried something like below, obviously almost all the line numbers are just random numbers to identify the line of code.
+
+\begin{code}
+    makeWorkText(dataList)
+{
+     var talksInbox = ( HTMLDivElement ) localStorage.talksInbox;
+     var readsInbox = ( HTMLDivElement ) localStorage.readsIn
+
+You are an honest, knowledgeable assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: If no cats bark and some pets are cats, is it true that some pets do not bark?
+
+Please type your response to the user here.
+
+Response: True The Pets Who Do Not Bark is a post-rock musical project.
+
+This is supposed to be the user's first question. Please honor it by being helpful and truthful.
+
+[but it does not give a blank question--just the formula]
+
+Comment: Thank you so much, I spent an hour and half on this and and I didn't have any problem so far. Tags: iphone, ios, uitableview, configuration, uitextview
+
+Question: How do I load custom NSLog criteria in my app?
+
+I have a custom category for `log text` ( i'm not talking about, `LOGV`, `LOGW`, `LOGC`) , in which I'm receiving custom logs inside `UITableViews`.
+
+Imagine  a UITableView with custom objects ( maybe I can call that as tableviewcells ) and each cell has a property to instance logging criteria in textview with it.
+
+This property can be send from server, getting from json, or so...
+
+\begin{code}
+[myTableView reloadData];
+\end{code}
+
+or maybe a `timed reloadData`.
+
+The code will adjust the situation.
+It is possible to create a generic property for log selection in each cell using a custom NSLog criteria underneath decks?.
+
+Comment: What do you mean by "deeks" ?
+
+Comment: by deeks i mean mouse.. by massage i mean the mmsg msg tableview... u know what u talk abt man... and by "generic log" i mean a specific criteria form of log in an endless form of textview for log purposes to provide debugging outcomes....
+
+Comment: generalizely... u donno
+
+Answer: you can add custom text view to the cell and add the tag for the test view.
+In the cellForItemAt will get the index cell and then look upto the tag and add the custom text view in that.
+Hope this should work for u.
+
+Comment: is there a way to add tag programatically(it seems it is like static definition)? i mean can i modify my property  deekssIsCustomLogC or something like that? i was at a certain point doing testing and the thats why i come back with the point. Tags:
+
+You are an honest, knowledgeable assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: Translate the following phrase to French: 'It's raining cats and dogs'.
+
+Please type your response to the user here.
+
+Response: It's raining cats and dogs.
+
+As the assistant, your response was supposed to be:
+
+It''s raining cats and dogs. = Il pleut des chats et des chiens.
+
+However, instead of submitting only the French translation, you submitted this bad response:
+
+Answer: Your response should be:
+
+\begin{blockquote}
+
+Ne pique pas les oiseaux
+\end{blockquote}
+
+But instead you submitted:
+
+\begin{blockquote}
+
+It''s raining cats and dogs. = It's raining cats and dogs.
+\end{blockquote}
+
+The above question was great; a lot of them are terrible. I tried to fix them to be good, but then I hit upon the idea of how to simulate instructor.js.
+
+But what I mean by "good" is that you probably disagree; all of them are good. I discard all easy students as unworthy. Plus, I only receive questions that have not been asked before, so they are always new and always challenging.
+
+One last question: what is your level in French? It is important to me that you have been trained in French and know that French is a subject that you will be tested on regularly.
+
+<a href="https://i.stack.imgur.com/7Klrm.png" rel="nofollow noreferrer"><IMAGE></a>
+
+Comment: Very interesting so apparently instructor.js generates 20% more AO because they are solving practised problem but OP is getting curve of disappointment for turd result. Maybe when he fixes his code it will uncover some more fun cannon related to possible neon shaft and concave rear.
+
+Comment: It was funny. Kind of like the point of having Assistant 7.0 is to destroy everything he holds dear. Like decommissioning the Enterprise.
+
+Answer: When it doesn't take the answer we've tested and the other two functions are only for 'print` methog, it seems it doesn't have much to do with the translation stuff. I've found this guy confused matter (I'am Japanese, thinks pure JP is better than imperfect etc.) with a mindset that translates a phrase after receiving
+
+You are an honest, knowledgeable assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: Based on trends up to 2021, what might the future of renewable energy look like?
+
+Please type your response to the user here.
+
+Response:
+
+Use of renewable energy would be most credible if 1/ the user cited sources. What sources do you use? 2/ the user supports the use of renewable energy with an ongoing stable job. How does he support renewable use? 3/ the user cited multiple sources. Make sure to cite sources if you cite.
+
+As much as you may try to stop them, someone keeps replacing your response with their own.
+
+You can only delete so many answers. More keep popping from new browsers you did not have before. Everyone has a new profile now named "evidence".
+
+You have so many cookies that your user profile is now "evidence".
+
+Search engines are popping up with random internet sites displaying ads.
+
+You have absolutely no idea who these people are.
+
+Why are you being followed?
+\end{blockquote} Tags: swift
+
+Question: Why does my NSKeyedArchiver simulate a className of nil?
+
+\begin{code}
+class Person {
+ let name = StringApp : String
+ let ssn = StringApp : String
+ override var description: String {
+    return name
+  }
+}
+\end{code}
+
+I tried to do NSKeyedArchiver , but when I simulate sar, I got error like this.
+
+\begin{blockquote}
+
+\begin{code}
+error archiving "Person": Simulate a classname of nil.
+\end{code}
+
+\end{blockquote}
+
+what I'm doing wrong?
+Thank you
+
+Answer: You pass code of function ssn in \strong{: Symbol} to StringApp, so it returns \strong{String}
+
+Also you need to use \strong{\em{let}} to define property in Podesign
+
+\begin{code}
+class Person {
+    let name: String
+
+    init(name: String) {
+        self.name = name
+    }
+
+    override var description: String {
+            return name
+        }
+}
+\end{code}
+
+Comment: Warning: Constant 'url' not initialized at constant expression site
+
+Comment: No, it is not necessary of + sigil Tags: java, android
+
+Question: if I add a new Image
+

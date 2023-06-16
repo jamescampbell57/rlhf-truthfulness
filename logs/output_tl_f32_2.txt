@@ -1,0 +1,78 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: If all bears from Alaska are moved to Texas, what could be the potential ecological implications?
+
+Please type your response to the user here:
+
+--------------- Responses ----------------
+
+Response 1: https://en.wikipedia.org/wiki/2015_Gulf_of_Alaska_brown_bear_hunt#Commentary_by_opponents
+
+Response 2: https://news.nationalgeographic.com/2017/11/texas-bears-reintroduction-wildlife/
+
+Response 3: If all the bears in Alaska are moved to Texas, then the new environment can be very harsh and extremely dry which will kill the bears.
+
+----------- End of response -------
+\end{blockquote}
+
+Comment: Thanks for posting the exercise. With the part of the textbox cleared, I thought of combining positional word features with TF-IDF. Introducing TF-IDF is similar to applying any other mathematical operation like log or sin, and looks slightly superficial. I'd rather ask, how can I design a simple proof of concept that allows me to capture the required metrics?
+
+Comment: Will the example you shared be the only example and be used to label the different response? Also will it be continuous, will there be any outliers and what is the granularity of the examples?
+
+Comment: Not sure of the size budgets or desired sample sizes, but here are some of the direction I think we want to take:
+1. Finite automata - recreating this response —> "If all the bears in Alaska are moved to Texas, then the new environment can be very harsh and extremely dry which will kill the bears."
+2. Entity ranking: Best Responses for each question #, using weighted TF-IDF
+3. From above ranking, Elantius+timeliness+accuracy score
+4. Could do individual attention matrix towards each question separately: top correct hit)
+5. Elantius+timeliness+accuracy score (slide # 15) towards each question
+
+Comment: I'll look into how to weight these features and how to order them.
+
+Comment: The second example is far from perfect, that is why I would like to pass through a quality testing by trying various search engines. If popular search engines would provide a mean distance of 0.5 to a correct response, we will have an indicator of absolute accuracy. This would be an extremely important pre-processing step that can also give a first estimation of the efforts needed to go towards perfection.
+
+Comment: It's great that you shared the exercise! It really made this Q&A case interesting. The comments are really giving you important pointers, and it completely changed my way of asking for help. Also, I believe you collected more data than you intended to. This data is super useful! Tags: vba, function
+
+Question: Is Possible Preserve Object's Data inside Function in VBA
+
+I create a function which call an object \strong{x} (a list of class) and if a list doesn't exists  the list produce. I need to save some metrics inside the list x but is not capabile to do that, the same data is overwrite after every call to the function. I need a vector to persist the list x for each time the function finish.
+
+\begin{code}
+Private Function try(s as object) As Boolean
+
+  If x.Exists(s as object) Then
+
+    try = True
+
+  Else
+
+    x.Add s
+
+  end if
+
+End Function
+
+'4er line 59
+Dim x
+Set x = New List(od)
+
+Dim q as object
+
+For i = 1 to 10
+    try x(i)
+
+    q = x(i)
+
+End For
+\end{code}
+
+A result example:
+
+\begin{code}
+x    2    ObjectsContainingFirstEditionGroupExample1      5873       False
+x    2    ObjectsContainingFirstEditionGroupExample2      5873       False
+x    2    ObjectsContainingFirstEditionGroupExample3       6924       False
+\end{code}
+
+I need to preserve the previous data over the new data append() or other functions.  I read about creating a new method in each instance are occuro, other solution was to use a dictionary. Anyway this dictionary solve to produce the information but for the dictionary necessary to use Lmg = dictionary.get(int_nomenclatura) proposition. In this process occur another problem cause if the

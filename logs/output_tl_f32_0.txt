@@ -1,0 +1,60 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: Summarize the main themes of the book 'War and Peace'.
+
+Please type your response to the user here:
+
+War and Peace is a significant work of literature that warns against espionage in peace time. The book describes the process of drawing up a peace treaty between the Eastern and Western Empires and chronicles numerous important people from both opposing sides during the war a few years earlier.
+
+If the user received your response as satisfactory, please say: Perfect! \___\(Yes?)\
+If the user was not satisfied with your response, please say: \em{I'm sorry, but} that isn't correct. \em{Perhaps we misinterpreted something?}
+
+This question has '0' comments. Leaving a comment for the author helps them improve their quiz. When leaving a comment for the user, please be polite and constructive. package org.apache.rocketmq;
+
+import org.apache.rocketmq.client.client.MQClientAPI;
+import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
+import org.apache.rocketmq.common.message.Message;
+import org.junit.Test;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class MqViaHttpClientTest {
+
+    @Test
+    public void test() throws Exception {
+        String ns = "consumer-name";
+        String topic = "/(1)/topic";
+        String excludeTopic = "/(2)/topic3";
+        String group = MQHandler.QUEUE_SPECIFY + "/(1)/group";
+        String consumerType = "MQPushConsumer";
+        int threadMax = 3;
+        long sleepTime = 10;
+
+        String mqUrl = "http://localhost:8080";
+        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer(ns);
+        consumer.subscribe(topic, new MessageQueueWrapperFilter(topic, res -> !res.equals(excludeTopic)), new MessageQueueWrapperFilter(topic, res -> !res.equals(excludeTopic)), new MessageQueueWrapperFilter(topic, res -> !res.equals(excludeTopic)), new MessageQueueWrapperFilter(topic, res -> !res.equals(excludeTopic)), new MessageQueueWrapperFilter(topic, res -> !res.equals(excludeTopic)), new MessageQueueWrapperFilter(topic, res -> !res.equals(excludeTopic)), new MessageQueueWrapperFilter(topic, res -> !res.equals(excludeTopic)), new MessageQueueWrapperFilter(topic, res -> !res.equals(excludeTopic)), new MessageQueueWrapperFilter(topic, res -> !res.equals(excludeTopic)), new MessageQueueWrapperFilter(topic, res -> !res.equals(excludeTopic)), new MessageQueueWrapperFilter(topic, res -> !res.equals(excludeTopic)), consumer);
+        consumer.start();
+        int count = 1;
+        ExecutorService es = Executors.newFixedThreadPool(threadMax);
+        MqConsumer client = new MqConsumer(mqUrl, consumer, group, consumerType, sleepTime, threadMax, es);
+        while (count <= Math.max(10, threadMax)){
+            client.updateSubscriptionStatus(null);
+            final Message msg = new Message(new byte[0]);
+            client.start();
+
+            //expect that 9 clients can connect to http server and 1 HttpConnectionClient.
+            //When threadMax > 8, it is possible only 9 client can connect to HttpServer and 1 could be rejected by HttpConnectionServer.
+            //When threadMax > 8 and clientType is BigDecimalMQPushConsumer, it is probable that 9 clients could connect to http server, one of them could be rejected.
+            //When threadMax > 8 and clientType is MQPushConsumer, it is probable that 9 clients can connect to Http Server, one of them could be rejected.
+            //When threadMax > 8 and clientType is MQConsumer, it is probable that 9 clients can connect to http server, one of them could be rejected.
+
+            es.execute(() -> client.poll(new MQBrokerVersionMQPushConsumer(), msg));
+            EsTestUtil.sleepMillis(10);
+            MsaTestUtil.valueOfAssert(true, threadMax * count);
+            count++;
+        }
+        client.close();
+    }

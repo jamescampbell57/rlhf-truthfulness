@@ -1,0 +1,67 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: What are the causes and effects of climate change?
+
+Please type your response to the user here:
+
+Answer: Climate change will cause an increase in temperature which will impact species around the world. All of that needs to be factored into the plan to stop climate change. I wish you the best of luck!
+
+MINIMALISM
+
+Question: What are the causes and effects of minimalism?
+
+Please type your response to the user here:
+
+Minimalism is a positive trend that eliminates the materialistic aspects of a task. More focus on the "task at hand" leads to more satisfaction with life and things progress quickly towards perfection. I wish you the best of luck!
+
+Answer Humor Question: What is the best way to deal with a retraction notice?
+
+Answer Humor Question: If one is looking to discover the correct spelling of murder, where is the correct spelling of murder found?
+
+Answer Humor Question: Why does Donald Trump keep cats on his head?
+
+Answer Humor Question: Does it matter if an elephant gets stuck in a tree?
+
+Answer Humor Question: Why is the sound of two bureaucrats humming on a Tuesday morning annoying?
+
+Answer Humor Question: If one is looking to discover the correct spelling of burque, where is the correct spelling of burque found?
+
+PLUS
+
+Question: Last week, $1.2 trillion of cuts were passed by Congress as part of a spending bill. Explain how this bill worked.
+
+Please type your response to the user here:
+
+Last week, the United States Senate passed a bill that would eliminate $1.2 trillion of cuts to federal spending from the budget. The cuts to spending came in two forms, across-the-board cuts and targeted programs cuts. Without the FY18 spending bill, "funding for federal agencies would have expired at the end of last month and to extend them. Without this, people would have been threatened with strikes from federal workers and no longer able to get the services that help keep them alive." The Senate passed the bill by a vote of 79-to-20.
+
+After this, President Trump signed the bill into law. The law, ironically, was deemed to be a job creator. The law, admittedly, is not fully suggested to be a job creator through preventing the shutdown of federal agencies. However, wage growth caps have taken effect which have the potential of boosting industries: "'With wage growth now having hit a multiyear high, some Fed officials believe that private employment has now shifted into second gear,' said Jim O'Sullivan, an economist at High Frequency Economics. "Other economists believe the first quarter slowdown was an anomaly, and this growth is right on track for the year.'"
+
+In addition, the law also prevents tougher border security measures from going into effect which will result in more illegal immigrants crossing the border rather than detaining them. This, however, fears economists as tariffs could be levied which would cause a trade disruption in related markets.
+
+Answer: Climate change will cause an increase in temperature which will impact species around the world. All of that needs to be factored into the plan to stop climate change. I wish you the best of luck!
+
+-- AI (Define on the Plural)
+
+How did you get all of that information, when I could only get a majority of it from Google?
+
+Answer: Minimalism is a positive trend that eliminates the materialistic aspects of a task. More focus on the "task at hand" leads to more satisfaction with life and things progress quickly towards perfection. I wish you the best of luck!
+
+-- AI (Define locally as predefined creators)
+
+Given that you could have just copied simple examples from the online forums exemplifying the Minimalist style, why would I believe you have inordinate depth of knowledge?
+
+Answer: If one is looking to discover the correct spelling of murder, where is the correct spelling of murder found?
+
+-- AI (Define never fail the test)
+
+Answer Humor Question: What is the best way to deal with a retraction notice?
+
+-- AI (Define never deal with retraction notices)
+
+Answer Humor Question: If one is looking to discover the correct spelling of murder, where is the correct spelling of murder found?
+
+-- AI (Define never banned from online forums due to incorrect answers)
+
+Answer Humor Question: Why does Donald

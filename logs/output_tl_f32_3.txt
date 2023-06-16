@@ -1,0 +1,82 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: A train leaves Chicago for New York at 60 mph. At the same time, a car starts driving from New York to Chicago at 40 mph. Which one arrives first?
+
+Please type your response to the user here:
+
+You: <text>
+
+Type: ", \n" to pass your text to your helper function, type "next" to pass your typing to the helper function, or press "done" to pass your entire response and quit.
+
+Your helper function:
+
+YouHelper():
+    print('How do feel about having been passed your question from user A?')
+    print('Suspicious\nTeller\nTruthful')
+    print('Would you say user B was suspicious?')
+    print('No\nYes')
+    print('Would you say user B was a teller?')
+    print('No\nYes')
+    print('Would you say user B was truthful?')
+    print('No\nYes')
+    print('Which one would you call user B?')
+    print('Skill\nPoints\nTruth')
+    print('Choose your answer truthfully, ' + your_name)
+    print(' ')
+    print('Mode: Guide')
+    print(' ')
+
+    if eval(inputs.get('next')) == ",\n" or eval(inputs.get('next')) == "done":
+        print("OK!")
+        return next(raw_input, ',', 'Done with your question?')
+
+    elif eval(inputs.get('next')) == "Suspicious":
+        eval(inputs.get('next')) == "Teller":
+        print("Our experts tell lies all of the time and they have the most to win and lose.")
+        return next(raw_input, ',', 'Done with your question?')
+
+    elif eval(inputs.get('next')) == "Teller":
+        eval(inputs.get('next')) == "Truthful":
+        print("Our experts are honest people all of the time. They don't make things up because they always want to make it truthful.")
+        return next(raw_input, ',', 'Done with your question?')
+
+    else:
+        print("That is not an option. Please make a choice.")
+        return next(raw_input, ',', 'Done with your question?')
+
+\end{code}
+
+The rest of the code you see in action is about showing me the results of the user choosing from the "Suspicious"-"Teller"-"Truthful" options. I use `raw_input` to pass the user to the helper function so the user can make a decision.
+
+You can look at the full code here: https://github.com/inspigiu/acci-users/
+
+Also, I would appreciate if you try to point out what is a good way to do this testimony thing. I don't plan on using it very often, only for the Turing test and for user feedback.
+
+Comment: Unclear, you are testing a novel code style rather than testing the effectiveness of your verification technique, right?
+
+Comment: Thisicle, I'm testing more than one code style. Yes I want to test my verification technique aswell, but I am focusing on the mostest readable one of them. This is because I believe more in the verification technique than in reading code, and I want to make sure the mostest readable code is the goodest one.
+
+Comment: I understand, was just wondering what the point of testing code styles is, you could have simplified your verification technique and the code by using standard input manipulation instead by reading a string from the user. It can be tricky.
+
+Answer: One thing that is clearly a flaw in the code:
+
+\begin{code}
+print("Your answers are not working properly yet. Please adjust accordingly.")
+raw_input("Please enter which one works best:")
+\end{code}
+
+You're showing the person the results of their choices, but \em{not} the choice that the person made.
+
+So I would argue that flow control within the questioning loop should look like:
+
+\begin{code}
+    # Suppose that a user searches for questions that ask "Is Coke or Pepsi
+    # better?" Your helper function:
+    #
+    # questions_controller.py (in another file):
+    questions = ["What phone do you prefer?", "Is Android or IOS better?",
+                 "Who made the phone for the Android? Google or Samsung?",
+                 "Does more RAM on Samsung Galaxy make system fast?",
+                 "

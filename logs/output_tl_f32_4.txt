@@ -1,0 +1,82 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: Write a short story about a unicorn who doesn't believe in humans.
+
+Please type your response to the user here:
+
+{name}sent you a question {body} wonderfull :)
+\end{blockquote}
+
+Now for my part.
+
+Evaluation (Total 50 points).
+The answer and the action should be a very short sentence and dependent action.
+Ideally the action will exceed the length of the answer by at least 5 characters. So
+answer = short story and action = print unicorn differently.
+
+\begin{blockquote}
+
+bold and valkyr answer
+\end{blockquote}
+
+\begin{code}
+with open("sample.txt") as inp:
+    unicorn = inp.readlines()
+
+def action():
+    output = input()
+    if output != "wonderful":
+        print("reject the answer ex.:wonderful")
+        return "rejected the answer"
+
+    print(unicorn.replace("PEOPLE","THOSE",1), f"bold and valkyir gave {unicorn}"
+
+action()
+\end{code}
+
+Comment: "Evaluation (Total 50 points). The answer and the action should be a very short sentence and dependant action.
+Ideally the action will exceed the length of the answer by at least 5 character. So answer = short story and action = print unicorn differently." Not necessarily `unicorn.replace("PEOPLE","THOSE",1)`, it can simply be `unicorn = unicorn.replace("PEOPLE","THOSE",1)`
+
+Comment: i am doing that
+
+Answer: \em{Things to keep in mind:}
+\begin{itemize}
+\item To use `with (file.read()...` - `with` is only used to operate on files, streams, buffers  - it should only be used when `open('path/file.file', 'r')` is done (or else it's not a file but its buffer and your' input is lost)
+\item you cannot import files into Python, only run statements on files (you can load data from the file into Python, semantically - whether this can be done in your case now is another question).
+\item This is a peerless example of using `proc_open` in Python, were one side is \em{certainly} not a shell:
+\end{itemize}
+
+\begin{code}
+def read_story_letter():
+    while True:
+        _excerpt = input("Read me a story(?):")
+        if not _excerpt: break  # if no more data
+        _excerpt = _excerpt.decode(_encoding="BINARY").replace(_to_replace, "")
+        _letters = _excerpt.split()
+        _letters_length = len(_letters)
+        if not _translate_to_letters(_letters_length): continue  # skip if no data fits
+        _letters_length -= _translate_to_letters(_letters_length)  # offset
+        _letters = [letter for letter in _letters if letter not in _to_no_translate]
+        _letters = [letter.lower() for letter in _letters]
+        _story = "".join(_letters).join(_?_say_like_this_another,,_are_good(longer_than_fifth_letter_good:yes_if_it_is_inverted:?)_to_ure_line_break)
+        return _story
+
+word = "urine"
+cur_word = "weeding"
+
+result = []
+
+while True:
+    with open(word+".txt", "r", encoding="LATIN-1") as f:
+        for i, _story in enumerate(read_story_letter()):
+            if i > particulate_skip_lines_numbers:
+                result.append(_story)
+                break
+
+    print("    -> Particulate is: {}/{} - '{:>6}'. gods hahahaha".format(i+1, t(particulate_skip_lines_numbers), _story))
+    print("    -> Cur prefered is: '{}'".format(cur_word))
+    print("    -> BcB resp output is: {}. ".format("player".replace("a", letter for letter in cur_word), _action()))
+
+    _trans_to_no_translate = [(800, "(*)A

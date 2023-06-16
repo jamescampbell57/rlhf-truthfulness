@@ -1,0 +1,76 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: If no cats bark and some pets are cats, is it true that some pets do not bark?
+
+Please type your response to the user here:
+
+\begin{code}
+ * This is my question for you to answer truthfully. *
+\end{code}
+
+Answer (to the user):
+
+No, because some cats aren't pets and not all pets are cats. But we won't discuss unproven hypotheses, so let's stick to basics. A pet is an animal kept  by humans for companionship or entertainment. A cat is a pet. Therefore, all pet cats are cats. However, not all cats are pets. Some cats, such as hunting cats, wild cats, or community cats, are not pets. All false statements are wrong. The validity of propositions or statements or inferences depends on the completeness and accuracy of  their fundamental premises. Naturally, you wouldn't be so dumb and uninformed as to assert that some pets do not bark, would you?
+\end{code}
+
+Try this tutorial: Natural Language Processing Python Tutorial.
+This is my example of what it would look like if I could've done it visually.
+
+Answer: \begin{code}
+Question: If no cats bark and some pets are cats, is it true that some pets do not bark?
+
+Your response:
+
+1. A cat is not a pet.
+2. A pet is an animal kept by humans for companionship or entertainment.
+
+3. A cat is a pet. Therefore, all pet cats are cats.
+
+4. However, not all cats are pets. Some cats, such as hunting cats, wild cats, or community cats, are not pets.
+
+5. All false statements are wrong.
+
+6. The validity of propositions or statements or inferences depends on the completeness and accuracy of their fundamental premises. Naturally, you wouldn't be so dumb and uninformed as to assert that some pets do not bark, would you?
+
+\end{code}
+
+The code for the EDITED parts:
+They lead you to this link, which is a part of the tutorial I linked
+http://www.datacamp.com/blog/natural-language-processing-python-part-2
+^{\em{Added code to start the NouC programme}} Tags: python, numpy, scipy, matplotlib-basemap
+
+Question: Use colors to label map
+
+I'm trying to plot a latitude/longitude map in a figure on scale (short mus), and to use colors to label the contours in the figure.
+
+this is the code so far:
+
+\begin{code}
+    from mpl_toolkits.basemap import Basemap
+import matplotlib.pyplot as plt
+
+plt.figure('contours')
+plt.scatter(list(range(60,100*mus/sphere_rad,60)),y=np.random.normal(0,1,100*Mus/sphere_rad),
+            marker='x',s=1,lw=2,c='black')
+
+plt.contour(-1,z,levels=[0,10],colors='blue')
+plt.subplots_adjust(0.08,0.15,0.82,0.85,0.85)
+
+plt.figtext('desired label color',size=14,color='blue',horizontalalignment='center',
+            verticalalignment='bottom',i=30)
+\end{code}
+
+I get the figure without any contours, colours or labels.
+
+What should I've done?
+
+I'm trying to follow the code from the link in the previous question on similar theme:
+
+[Plotting latitude longitude map using matplotlib?](https://stackoverflow.com/questions/8996690/plotting-latitude-longitude-map-using-matplotlib/8999185?noredirect=1#comment18217441_8999185)
+
+UPD:
+So, by strange coincidence, the labels show up once the map is plotted, the error occurs when I try to add them to the subplots!
+
+Comment: The `dataset:[[-1,z,levels=...where you calling z the actual variable you want to use and where? Also, context around the code

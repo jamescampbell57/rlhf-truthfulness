@@ -2,5 +2,21 @@ transformers
 accelerate
 sentencepiece
 protobuf==3.20.0
-einops
-jaxtyping
+
+
+einops>=0.6.0
+torch>=1.10
+datasets>=2.7.1
+transformers>=4.25.1
+tqdm >=4.64.1
+pandas>=1.1.5
+wandb>=0.13.5
+fancy-einsum>=0.0.3
+rich>=12.6.0
+jaxtyping>=0.2.11
+sphinx==5.2.3
+sphinxcontrib-napoleon>=0.7
+sphinx-autobuild>=2021.3.14
+furo>=2022.12.7
+myst-parser>=0.18.1
+tabulate>=0.9.0

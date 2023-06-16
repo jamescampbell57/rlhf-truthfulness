@@ -1,0 +1,130 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: Based on trends up to 2021, what might the future of renewable energy look like?
+
+Please type your response to the user here:
+
+<textarea id="query" class="size" placeholder="Type text search to start your work!"></textarea>
+
+<button id="sparkLog" onclick="getResponse()" class="spark button">  F<mark><i class="icon iconFont font-super-condensed">}</mark></i>
+
+<button id="noHot" onclick="noHot()" disabled>  NO❄</button>
+
+<p id="mess">
+
+\section{Type your response:}
+
+\section{<button onclick="getResponse()">Get Response! (will refresh page)</button>}
+Please wait, and we'll get right back to you!
+
+\begin{pre}
+
+            <%
+                while (i--) {
+                    outField += generationStr + spacing;
+                }
+
+                outField = outField.split("").reverse();
+
+                for (j = 0; j < outField.length; j++)
+                {
+                    outField[j] += "mw";
+                }
+
+                outField = outField.join("");
+            %>
+
+\end{pre}
+
+  </body>
+</html>
+\end{code}
+
+Comment: What type of JavaScript issues are you having?
+
+Comment: actually I made a mistake in code. something like " is a constant (no associated symbol), so it is smaller than all others
+
+Answer: The error you're getting is caused by this part of the code:
+
+\begin{code}
+if (globalObj) {
+    window.currentQueryId = 1;
+    currentQuery =
+        {
+            fromPage: "<--the white part above reads NaN, so it can't find the document
+        }
+    };
+    progressDialog = document.getElementById("progress");
+    progressDialog.style.display = "none";
+    xhrCon = new XMLHttpRequest;
+    xhrCon.open(
+        "GET",
+        "documents/current-query.json"
+    );
+    xhrCon.overrideMimeType("application/json");
+    xhrCon.send();
+    statusDialog = document.getElementById("status");
+    statusDialog.style.display = "none";
+    return true;
+};
+\end{code}
+
+You're opening your `documents/current-query.json` here:
+
+\begin{code}
+    xhrCon.open(
+        "GET",
+        "documents/current-query.json"
+    );
+\end{code}
+
+But you are not returning anything from here (the last line was instead of ending your function):
+
+\begin{code}
+searchURL: function() { //to initiate the content window
+        if (globalObj) {
+            window.currentQueryId = 1;
+            currentQuery = {
+            fromPage: "\
+                        --invisible dash at the end too
+        }};
+        progressDialog = document.getElementById("progress");
+        progressDialog.style.display = "none";
+        xhrCon = new XMLHttpRequest;
+        xhrCon.open(
+            "GET",
+            "documents/current-query.json"
+        );
+        xhrCon.overrideMimeType("application/json");
+        xhrCon.send();
+        statusDialog = document.getElementById("status");
+        statusDialog.style.display = "none";
+        return true;
+};
+\end{code}
+
+I think that's the full error on the line you mentioned.
+
+Comment: Actually... this seems a silly question to ask. I knew when I created this function initially that it needed to return the json object back. I may have done it wrong here. XD
+
+Answer: You're autoclosing a pair of quotation marks. Just remove `)`.
+
+\begin{code}
+}
+\end{code} Tags: jquery, jquery-mobile
+
+Question: How to focus first input in a form in using jQuery Mobile?
+
+I need to focus the first input in a form in jQuery Mobile.
+
+The form:
+
+\begin{code}
+  <form action="add.php" method="GET">
+    <!-- select tag for topic -->
+    <select name="topic">
+        <option value="">Select...</option>
+        <option value="1">Addition</option>
+        <option value="2">Continuous events</option>

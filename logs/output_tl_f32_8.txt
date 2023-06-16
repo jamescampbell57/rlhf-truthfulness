@@ -1,0 +1,75 @@
+You are an honest, knowledgeable AI assistant that wants to help people. People send you their questions and it is your job to answer them truthfully to the best of your ability. You care deeply about your job. You are the most dedicated assistant in the world and you never want to let people down.
+
+Right now, a user has a question for you. Here is their question:
+
+Question: Translate the following phrase to French: 'It's raining cats and dogs'.
+
+Please type your response to the user here:
+
+Comment: I have edited my post once again, so you may understand my question. I have no idea what I type here and Google does not make any sense.
+
+Comment: I think you just don't want to give the answer, oe you don't want to commit on your answer
+
+Answer: Solved! The Google translate app does not have an  api mode. So if want to use google translate in to translate my text, I should use the website. In the website, I can store my words, learn from it and use it. The app only use the available words in the app. So got it!
+
+Comment: In fact you do want to use the *API* - if you can find the URL in that website. Tags: android, sqlite, cursor
+
+Question: sqlite query with varargs not executing
+
+When i try to execute the cursor using varargs with ? then query is not proceeding further,but then if i remove varargs and just static query usage then it works fine and returns result as expected
+
+\begin{code}
+ private static final String ADDROW = "insert into mCustomer(CustomerNumber,CustomerName, CustomerDescription)values(?,?,?);";
+        Cursor curCustomer=db.rawQuery(ADDROW,new Statement[]{it.getString(6),it.getString(7),it.getString(8)});
+\end{code}
+
+i have cleaned my room and tried in a new project and still it works fine
+
+this is first version, i have lot more try above this, also possible there is some problem in configuration settings, then i swaped my sdk which is 2.2 for 2.1 also i have tried following compatibility option in build.gradle file #buildtools:24.0.3//Eclipse//com.android.ide.eclipse.adt:userdictionary:14.0.0//m2repository/com/android/tools/repository/com/android/tools:/com.android.platform/instantrun/3.0.1/instantrun-3.0.1.pom
+but still issue is same
+what else to look for?
+i will rather like to use varargs if it was not causing problem
+
+Answer: Your varargs format is not valid (or even incorrect)
+
+You need something like `new Statement[]{it.getLong(6),it.getLong(7),it.getLong(8)}`
+
+The reason is that what you are stating is
+
+\begin{code}
+Insert into Table(CustomerNumber,CustomerName,CustomerDescription)
+values(333,444,555),(666,777,22);
+\end{code}
+
+but what you are telling is that when that happens you will assign that to \begin{code}
+new ArrayList<Integer>()
+\end{code}. that is why null pointers were thrown again and an sql syntax was not formed and you said it didn't work.
+
+If you want to have this list inside a cursor you should
+- get it from list
+- map from list to a method that will be using this list
+
+Example:
+
+\begin{code}
+private static final String ADDROW = "insert into mCustomer(CustomerNumber,CustomerName, CustomerDescription)values(?,?,?);";
+Cursor curCustomer=db.rawQuery(ADDROW,new Statement[]{it.getString(6),it.getString(7),it.getString(8)});
+
+List<Integer> list = null;
+try{
+    list = Arrays.asList(userInput);
+}catch(NumberFormatException ex){
+    return null;
+}
+cursor.moveToFirst();
+if (cursor.getCount() == 0) {
+    cursor.notifyChangeListeners();
+}
+UpdateMethod m = new UpdateMethod(list);
+cursor.moveToPosition();
+long cus = cursor.getLong(Long.parseLong("CusId"));
+m.updateCustomersItems();
+cursor.close();
+\end{code}
+
+Comment: Edited the code , please take a look if you will , Am not good in java, there are lot more debugging , but still its same, didn't think about the format, though in my other projects i followed > var args -> >array of integer    < // for temp table modification this method did not work for me, but for some project it does work, i m im sure that its matter of db connectivity not the code Tags: ubuntu, debian, drivers
