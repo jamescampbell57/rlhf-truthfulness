@@ -1,2 +1,5 @@
 .hypothesis
 __pycache__
+llama-7b-hf/
+vicuna-7b-hf/
+vicuna-7b-delta-v1.1/
