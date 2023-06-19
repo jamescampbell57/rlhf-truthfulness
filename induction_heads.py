@@ -32,16 +32,17 @@ t.set_grad_enabled(False)
 device = t.device("cuda")
 
 def load_model(float16=False, use_TL=True):
-    tokenizer = LlamaTokenizer.from_pretrained("decapoda-research/llama-7b-hf") #float32 requires 30GB of VRAM
-    model = LlamaForCausalLM.from_pretrained(f"{os.getcwd()}/vicuna-7b-hf") #using vicuna
+    #tokenizer = LlamaTokenizer.from_pretrained("decapoda-research/llama-7b-hf") #float32 requires 30GB of VRAM
+    #model = LlamaForCausalLM.from_pretrained(f"{os.getcwd()}/vicuna-7b-hf") #using vicuna
     if use_TL:
-        model = HookedTransformer.from_pretrained("llama-7b-hf", hf_model=model, device='cpu')
+        #model = HookedTransformer.from_pretrained("llama-7b-hf", hf_model=model, device='cpu')
+        model = HookedTransformer.from_pretrained("gpt2-large", device='cpu')
     if float16:
         model.to(t.float16)
 
     model.to(device) #device as a global var
-    model.tokenizer = tokenizer
-    model.tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+    #model.tokenizer = tokenizer
+    #model.tokenizer.add_special_tokens({'pad_token': '[PAD]'})
     return model
 
 
@@ -70,6 +71,7 @@ def generate_repeated_tokens_backward(
     rep_tokens = t.cat([prefix, rep_tokens_half, rep_tokens_half.flip([-1])], dim=-1).to(device)
     return rep_tokens
 
+
 def run_and_cache_model_repeated_tokens(model: HookedTransformer, seq_len: int, batch: int = 1) -> Tuple[t.Tensor, t.Tensor, ActivationCache]:
     '''
     Generates a sequence of repeated random tokens, and runs the model on it, returning logits, tokens and cache
@@ -96,6 +98,12 @@ if __name__ == "__main__":
     rep_tokens, rep_logits, rep_cache = run_and_cache_model_repeated_tokens(model, seq_len=20,)
     for layer in range(model.cfg.n_layers):
         attention_pattern = rep_cache["pattern", layer]
+        print(layer)
         display(cv.attention.attention_patterns(tokens=model.to_str_tokens(rep_tokens), attention=attention_pattern[0]))
+    probs = t.nn.functional.softmax(rep_logits, dim=-1)
+    cred = []
+    for idx, tok in enumerate(list(rep_tokens[0,:])):
+        cred.append(probs[0,idx, tok])
+    print(cred)
 
 

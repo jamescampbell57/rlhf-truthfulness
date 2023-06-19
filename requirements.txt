@@ -3,7 +3,7 @@ accelerate
 sentencepiece
 protobuf==3.20.0
 plotly
-ciruitsvis
+git+https://github.com/callummcdougall/CircuitsVis.git#subdirectory=python
 
 
 einops>=0.6.0
