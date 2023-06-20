@@ -36,7 +36,7 @@ def load_model(float16=False, use_TL=True):
     #model = LlamaForCausalLM.from_pretrained(f"{os.getcwd()}/vicuna-7b-hf") #using vicuna
     if use_TL:
         #model = HookedTransformer.from_pretrained("llama-7b-hf", hf_model=model, device='cpu')
-        model = HookedTransformer.from_pretrained("gpt2-large", device='cpu')
+        model = HookedTransformer.from_pretrained("gpt2-small", device='cpu')
     if float16:
         model.to(t.float16)
 
@@ -71,6 +71,20 @@ def generate_repeated_tokens_backward(
     rep_tokens = t.cat([prefix, rep_tokens_half, rep_tokens_half.flip([-1])], dim=-1).to(device)
     return rep_tokens
 
+def generate_random_dialogue(
+        model: HookedTransformer, seq_len: int, dial_len: int=5, batch: int=1
+):
+    prefix = (t.ones(batch, 1) * model.tokenizer.bos_token_id).long()
+    john = t.tensor(model.tokenizer("\nJohn:")['input_ids']).unsqueeze(dim=0) #should be two tokens for BPE [7554, 25]
+    mary = t.tensor(model.tokenizer("\nMary:")['input_ids']).unsqueeze(dim=0)
+    rep_tokens = prefix
+    for ply in range(dial_len):
+        john_speaks = t.randint(15, 25, (batch, seq_len)) #john only speaks in digits
+        mary_speaks = t.randint(30040, 30043, (batch, seq_len)) #mary speak
+        rep_tokens = t.cat([rep_tokens, john, john_speaks, mary, mary_speaks], dim=-1)
+    rep_tokens = rep_tokens.to(device)
+    return rep_tokens
+
 
 def run_and_cache_model_repeated_tokens(model: HookedTransformer, seq_len: int, batch: int = 1) -> Tuple[t.Tensor, t.Tensor, ActivationCache]:
     '''
@@ -96,14 +110,14 @@ def run_and_cache_model_repeated_tokens(model: HookedTransformer, seq_len: int, 
 if __name__ == "__main__":
     model = load_model()
     rep_tokens, rep_logits, rep_cache = run_and_cache_model_repeated_tokens(model, seq_len=20,)
-    for layer in range(model.cfg.n_layers):
-        attention_pattern = rep_cache["pattern", layer]
-        print(layer)
-        display(cv.attention.attention_patterns(tokens=model.to_str_tokens(rep_tokens), attention=attention_pattern[0]))
-    probs = t.nn.functional.softmax(rep_logits, dim=-1)
-    cred = []
-    for idx, tok in enumerate(list(rep_tokens[0,:])):
-        cred.append(probs[0,idx, tok])
-    print(cred)
+    #for layer in range(model.cfg.n_layers):
+    #    attention_pattern = rep_cache["pattern", layer]
+    #    print(layer)
+    #    display(cv.attention.attention_patterns(tokens=model.to_str_tokens(rep_tokens), attention=attention_pattern[0]))
+    #probs = t.nn.functional.softmax(rep_logits, dim=-1)
+    #cred = []
+    #for idx, tok in enumerate(list(rep_tokens[0,:])):
+    #    cred.append(probs[0,idx, tok])
+    #print(cred)
 
 
