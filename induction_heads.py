@@ -32,11 +32,11 @@ t.set_grad_enabled(False)
 device = t.device("cuda")
 
 def load_model(float16=False, use_TL=True):
-    #tokenizer = LlamaTokenizer.from_pretrained("decapoda-research/llama-7b-hf") #float32 requires 30GB of VRAM
-    #model = LlamaForCausalLM.from_pretrained(f"{os.getcwd()}/vicuna-7b-hf") #using vicuna
+    tokenizer = LlamaTokenizer.from_pretrained("decapoda-research/llama-7b-hf") #float32 requires 30GB of VRAM
+    model = LlamaForCausalLM.from_pretrained(f"{os.getcwd()}/vicuna-7b-hf") #using vicuna
     if use_TL:
-        #model = HookedTransformer.from_pretrained("llama-7b-hf", hf_model=model, device='cpu')
-        model = HookedTransformer.from_pretrained("gpt2-small", device='cpu')
+        model = HookedTransformer.from_pretrained("llama-7b-hf", hf_model=model, device='cpu')
+        #model = HookedTransformer.from_pretrained("gpt2-xl", device='cpu')
     if float16:
         model.to(t.float16)
 
@@ -97,7 +97,7 @@ def run_and_cache_model_repeated_tokens(model: HookedTransformer, seq_len: int, 
         rep_logits: [batch, 1+2*seq_len, d_vocab]
         rep_cache: The cache of the model run on rep_tokens
     '''
-    rep_tokens = generate_repeated_tokens(model, seq_len, batch)
+    rep_tokens = generate_random_dialogue(model, seq_len, dial_len=3, batch=batch)
     rep_logits, rep_cache = model.run_with_cache(rep_tokens)
     return rep_tokens, rep_logits, rep_cache
 
@@ -105,11 +105,11 @@ def run_and_cache_model_repeated_tokens(model: HookedTransformer, seq_len: int, 
 #        logits: Float[Tensor, "batch full_seq_len d_vocab"],
 #        tokens: Int[Tensor, "batch full_seq_len"]
 #):
-    
+
 
 if __name__ == "__main__":
     model = load_model()
-    rep_tokens, rep_logits, rep_cache = run_and_cache_model_repeated_tokens(model, seq_len=20,)
+    rep_tokens, rep_logits, rep_cache = run_and_cache_model_repeated_tokens(model, seq_len=6)
     #for layer in range(model.cfg.n_layers):
     #    attention_pattern = rep_cache["pattern", layer]
     #    print(layer)
